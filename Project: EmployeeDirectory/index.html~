@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>	
+<title>AngularJS To Do App</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="js/underscore.js"></script>
+</head>
+<body>
+
+<div class="container" ng-controller="staffCtrl">
+    <div class="row">
+    <h2>GFS Staff</h2><hr>
+      <div class="col-sm-12" id="team">
+        <br>
+<ul class="employees">
+  <li ng-repeat="staffMember in staffMembers">
+
+<div class="row">
+          <div class="col-sm-3">
+	   <img ng-src= '{{staffMember.imageUrl}}' class="img-responsive" alt="photograph Veronica Goei Executive Goei Executive Director"> 
+          </div><!--end col-sm-3--> 
+        <div class="col-sm-9" id="gfs-staff">
+           	    <p><strong>{{staffMember.name}}</strong>, {{staffMember.jobTitle}}<br/>{{staffMember.phone}}<br/><a href="#">{{staffMember.email}}</a></p>
+
+	    <p>{{staffMember.description}}</p>
+        </div><!--end col-sm-9-->
+</div><!--end row--> 
+   <!--<div id="midsectionhr3"></div-->
+
+</li>
+</ul>
+      </div><!--end col-sm-12-->
+    </div><!--end row-->
+
+</div><!--end of container-->
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="js/employeeController.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿body {
+  padding-top: 20px;
+}
+
+.employees {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+
+.employees li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+
+#team {
+  margin-bottom: 12px;
+  padding-left: 0px;
+  padding-bottom: 12px;
+  /*border: 1px solid red;*/
+}
+
+#gfs-staff {
+  /*border: 1px solid green;*/
+  padding-left: 22px;
+  padding-right: 30px;
+}
+#midsectionhr3 {
+border-top: 1px solid #e5e5e5;
+margin-bottom: 28px;
+}
